@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page title</title>
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary_large_image">
+        <meta property="og:type" content="website">
+        <meta name="description" content="Capture your thoughts, feelings, and reflections—just for you, or shared with your therapist if you choose. Your journal, your way.">
+        <meta property="og:image" content="https://www.clamalo.com/images/Clamalo-mental-health-tracking.png">
+        <meta name="keywords" content="emotion-tracking-app, therapy-app, mental-health-tracking">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit:400|Hedvig+Letters+Serif:400&amp;subset=latin">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
+    <link rel="icon" type="image/png" href="images/apple-touch-icon.png">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer></script>
+</head>
+<body class="antialiased bg-body text-body font-body">
+    <div class="">
+                
+      <section x-data="{ mobileNavOpen: false }" class="bs-section-dragged relative bg-orange-50">  <div class="container mx-auto px-4">    <div class="flex items-center justify-between py-5 relative">      <!-- Logo -->      <div class="flex items-center">        <a href="/" class="inline-block">          <img src="images/clamalo.svg" alt="Clamalo Logo" class="object-contain h-10">        </a>      </div>      <!-- Desktop Nav Centered -->      <div class="absolute left-1/2 transform -translate-x-1/2 hidden xl:block">        <ul class="flex items-center">          <li class="mr-9 text-sm"><a href="/" class="nav-link relative px-1 transition duration-200 text-gray-800 hover:text-black hover:font-medium after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-purple-300 after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300">For journalers</a></li>          <li class="mr-9 text-sm"><a href="https://www.clamalo.com/for-therapists" class="nav-link relative px-1 transition duration-200 text-gray-800 hover:text-black hover:font-medium after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-purple-300 after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300">Are you a therapist?</a></li>          <li class="mr-9 text-sm"><a href="#how-it-works" class="nav-link relative px-1 transition duration-200 text-gray-800 hover:text-black hover:font-medium after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-purple-300 after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300">How it works</a></li>          <li class="mr-9 text-sm"><a href="#pricing" class="nav-link relative px-1 transition duration-200 text-gray-800 hover:text-black hover:font-medium after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-purple-300 after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300">Pricing</a></li>        </ul>      </div>      <!-- Desktop Sign In/Register -->      <div class="hidden xl:flex items-center space-x-2"><a href="https://emotional-diary.lovable.app/auth?role=client" class="inline-flex py-3 px-6 text-lg font-medium text-black border border-gray-900 rounded-full transition duration-300 hover:bg-gradient-to-r hover:from-purple-200 hover:to-yellow-100">Sign In</a><a href="https://emotional-diary.lovable.app/auth?role=client" class="inline-flex py-3 px-6 text-lg font-medium text-white bg-black border border-gray-900 rounded-full transition duration-300 hover:bg-gray-800">Register</a></div>      <!-- Hamburger Menu (Visible below xl) -->      <div class="block xl:hidden">        <button @click="mobileNavOpen = !mobileNavOpen" class="flex items-center justify-center w-10 h-10">          <svg id="svg_b96222a74e8ed23ec7737df3b346dd19" class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"></svg>        </button>      </div>    </div>  </div>  <!-- Mobile Nav -->  <div :class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}" class="fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50 hidden">    <div @click="mobileNavOpen = false" class="fixed inset-0 bg-gray-800 opacity-80"></div>    <nav class="relative z-10 bg-white h-full overflow-y-auto rounded-r-2xl shadow-xl">      <div class="flex justify-between items-center p-6 border-b border-gray-200">        <a href="#" class="block">          <img src="images/clamalo.svg" alt="Logo" class="h-10 object-contain">        </a>        <button @click="mobileNavOpen = false" class="p-2 rounded-full hover:bg-gray-100 transition-colors">          <svg id="svg_a0843e393c23a67936d9d6940d6069e0" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" fill="none" viewbox="0 0 24 24" stroke="currentColor"></svg>        </button>      </div>      <div class="p-6">        <ul class="space-y-4">          <li><a href="https://www.clamalo.com/" class="block py-2 px-4 text-gray-800 hover:bg-purple-100 rounded-lg transition-colors duration-200 hover:text-black font-medium">For journalers</a></li>          <li><a href="https://www.clamalo.com/for-therapists" class="block py-2 px-4 text-gray-800 hover:bg-purple-100 rounded-lg transition-colors duration-200 hover:text-black font-medium">Are you a therapist?</a></li>          <li><a href="https://www.clamalo.com/#how-it-works" class="block py-2 px-4 text-gray-800 hover:bg-purple-100 rounded-lg transition-colors duration-200 hover:text-black font-medium">How it works</a></li>          <li><a href="https://www.clamalo.com/#pricing" class="block py-2 px-4 text-gray-800 hover:bg-purple-100 rounded-lg transition-colors duration-200 hover:text-black font-medium">Pricing</a></li>        </ul>        <div class="mt-8 space-y-3"><a href="https://emotional-diary.lovable.app/auth?role=client" class="block w-full py-3 px-4 text-center font-medium text-black border border-gray-900 rounded-full transition duration-300 hover:bg-purple-200">Sign In</a><a href="https://emotional-diary.lovable.app/auth?role=client" class="block w-full py-3 px-4 text-center font-medium text-white bg-black border border-gray-900 rounded-full transition duration-300 hover:bg-gray-800">Register</a></div>      </div>    </nav>  </div>  </section>
+                
+      <section class="py-20 bg-orange-50">
+          <div class="container mx-auto px-4">
+              
+              
+              
+              <div class="flex flex-wrap -m-4 mb-12">
+                  <div class="w-full lg:w-2/3 p-4">
+                      <div class="mb-10">
+                          <img class="w-full object-cover" style="height:400px;" src="https://images.unsplash.com/photo-1501854140801-50d01698950b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=840&amp;q=80" alt="">
+                      </div>
+                      <p class="text-gray-400 text-xs font-bold mb-4">10 Jun 2025 19:40</p>
+                      <h2 class="font-heading text-4xl font-bold max-w-lg mb-4">Lorem ipsum dolor sit amet consectutar domor</h2>
+                      <p class="text-gray-600 text-xl mb-6 max-w-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa nibh, pulvinar vitae aliquet nec, accumsan aliquet orci.</p>
+                      <a class="inline-block text-green-500 hover:text-green-600 transition duration-200 font-bold" href="#">Read more</a>
+                  </div>
+                  <div class="w-full lg:w-1/3 p-4">
+                      <div class="mb-10">
+                          <img class="w-full object-cover" style="height:400px;" src="https://images.unsplash.com/photo-1492724724894-7464c27d0ceb?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=667&amp;q=80" alt="">
+                      </div>
+                      <p class="text-gray-400 text-xs font-bold mb-4">10 Jun 2025 19:40</p>
+                      <h2 class="font-heading text-4xl font-bold max-w-lg mb-4">Lorem ipsum dolor sit amet</h2>
+                      <p class="text-gray-600 text-xl mb-6 max-w-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                      <a class="inline-block text-green-500 hover:text-green-600 transition duration-200 font-bold" href="#">Read more</a>
+                  </div>
+              </div>
+              <div class="flex flex-wrap -m-4">
+                  <div class="w-full lg:w-1/3 p-4">
+                      <div class="mb-10">
+                          <img class="w-full object-cover" style="height:400px;" src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=753&amp;q=80" alt="">
+                      </div>
+                      <p class="text-gray-400 text-xs font-bold mb-4">10 Jun 2025 19:40</p>
+                      <h2 class="font-heading text-4xl font-bold max-w-lg mb-4">Lorem ipsum dolor sit amet</h2>
+                      <p class="text-gray-600 text-xl mb-6 max-w-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                      <a class="inline-block text-green-500 hover:text-green-600 transition duration-200 font-bold" href="#">Read more</a>
+                  </div>
+                  <div class="w-full lg:w-1/3 p-4">
+                      <div class="mb-10">
+                          <img class="w-full object-cover" style="height:400px;" src="https://images.unsplash.com/photo-1552083375-1447ce886485?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80" alt="">
+                      </div>
+                      <p class="text-gray-400 text-xs font-bold mb-4">10 Jun 2025 19:40</p>
+                      <h2 class="font-heading text-4xl font-bold max-w-lg mb-4">Lorem ipsum dolor sit amet</h2>
+                      <p class="text-gray-600 text-xl mb-6 max-w-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                      <a class="inline-block text-green-500 hover:text-green-600 transition duration-200 font-bold" href="#">Read more</a>
+                  </div>
+                  <div class="w-full lg:w-1/3 p-4">
+                      <div class="mb-10">
+                          <img class="w-full object-cover" style="height:400px;" src="https://images.unsplash.com/photo-1504567961542-e24d9439a724?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=667&amp;q=80" alt="">
+                      </div>
+                      <p class="text-gray-400 text-xs font-bold mb-4">10 Jun 2025 19:40</p>
+                      <h2 class="font-heading text-4xl font-bold max-w-lg mb-4">Lorem ipsum dolor sit amet</h2>
+                      <p class="text-gray-600 text-xl mb-6 max-w-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                      <a class="inline-block text-green-500 hover:text-green-600 transition duration-200 font-bold" href="#">Read more</a>
+                  </div>
+              </div>
+          </div>
+      </section>
+                
+      <section class="relative py-24 overflow-hidden bs-section-dragged bg-orange-50">  <div class="relative z-10 container mx-auto px-4 md:mt-6">    <div class="flex flex-wrap -m-6 border-t border-gray-200 md:pt-6 md:pt-8">      <!-- Logo and Description -->      <div class="w-full md:w-1/2 lg:w-5/12 p-6">        <div class="flex flex-col justify-between h-full">          <div>            <img class="mb-12" src="images/clamalo.svg" alt="">          </div>          <div>            <p class="text-gray-600 text-sm">© 2025 - Clamalo. All Rights Reserved</p>          </div>        </div>      </div>      <!-- Company Section -->      <div x-data="{ companyOpen: false }" class="w-full md:w-1/2 lg:w-2/12 px-6">        <div class="h-full">          <button @click="companyOpen = !companyOpen" class="flex lg:hidden justify-between w-full text-gray-900 tracking-wide text-xs focus:outline-none font-heading text-gray-500 border-t border-gray-200 py-4">            Company            <span :class="companyOpen ? 'rotate-180' : ''" class="transform transition-transform text-gray-500 rotate-180">+</span>          </button>          <h3 class="mb-9 hidden lg:block font-heading font-semibold text-xs text-gray-500 uppercase tracking-px">Company</h3>          <ul :class="{ 'block': companyOpen, 'hidden lg:block': !companyOpen }" class="pl-4 lg:pl-0 mt-2 lg:mt-0 space-y-2 lg:space-y-4 mb-4 hidden lg:block">            <li><a class="font-heading font-medium text-base text-gray-900 hover:text-gray-700" href="https://clamalo.com/#how-it-works">Features</a></li>            <li><a class="font-heading font-medium text-base text-gray-900 hover:text-gray-700" href="https://www.clamalo.com/#about-us">About Us</a></li>            <li><a class="font-heading font-medium text-base text-gray-900 hover:text-gray-700" href="https://www.clamalo.com/#pricing">Pricing</a></li>            <li><a class="font-heading font-medium text-base text-gray-900 hover:text-gray-700" href="https://www.clamalo.com/for-therapists#therapist-pricing">Pricing for Therapists</a></li>          </ul>        </div>      </div>      <!-- Support Section -->      <div x-data="{ supportOpen: false }" class="w-full md:w-1/2 lg:w-2/12 px-6">        <div class="h-full">          <button @click="supportOpen = !supportOpen" class="flex lg:hidden justify-between w-full text-gray-900 tracking-wide text-xs focus:outline-none font-heading text-gray-500 border-t border-gray-200 py-4">            Support            <span :class="supportOpen ? 'rotate-180' : ''" class="transform transition-transform text-gray-500 rotate-180">+</span>          </button>          <h3 class="mb-9 hidden lg:block font-heading font-semibold text-xs text-gray-500 uppercase tracking-px">Support</h3>          <ul :class="{ 'block': supportOpen, 'hidden lg:block': !supportOpen }" class="pl-4 lg:pl-0 mt-2 lg:mt-0 space-y-2 lg:space-y-4 mb-4 hidden lg:block">            <li><a class="font-heading font-medium text-base text-gray-900 hover:text-gray-700" href="https://emotional-diary.lovable.app/auth?role=client">Account</a></li>            <li><a class="font-heading font-medium text-base text-gray-900 hover:text-gray-700" href="#faq">FAQ</a></li>          </ul>        </div>      </div>      <!-- Legals Section -->      <div x-data="{ legalOpen: false }" class="w-full md:w-1/2 lg:w-3/12 px-6">        <div class="h-full">          <button @click="legalOpen = !legalOpen" class="flex lg:hidden justify-between w-full text-gray-900 tracking-wide text-xs focus:outline-none font-heading text-gray-500 border-t border-gray-200 py-4">            Legals            <span :class="legalOpen ? 'rotate-180' : ''" class="transform transition-transform text-gray-500 rotate-180">+</span>          </button>          <h3 class="mb-9 hidden lg:block font-heading font-semibold text-xs text-gray-500 uppercase tracking-px">Legals</h3>          <ul :class="{ 'block': legalOpen, 'hidden lg:block': !legalOpen }" class="pl-4 lg:pl-0 mt-2 lg:mt-0 space-y-2 lg:space-y-4 md:mr-14 hidden lg:block">            <li><a class="font-heading font-medium text-base text-gray-900 hover:text-gray-700" href="https://clamalo.com/terms-of-use">Terms &amp; Conditions</a></li>            <li><a class="font-heading font-medium text-base text-gray-900 hover:text-gray-700" href="http://clamalo.com/privacy-policy">Privacy Policy</a></li>            <li class="md:pt-4"><a class="font-heading font-medium text-base hover:text-purple-500 bg-pink-50 font-black text-purple-600" href="#pricing">Save up to 25% with our Annual Plans.</a></li>          </ul>        </div>      </div>    </div>  </div></section>
+    </div>
+</body>
+</html>
+
